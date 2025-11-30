@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atualizações - Titan PDF Downloader</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        titan: { light: '#A855F7', DEFAULT: '#7E22CE', dark: '#581C87' },
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50">
+
+    <!-- NAVBAR SIMPLIFICADA -->
+    <nav class="bg-white border-b border-gray-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 text-gray-900 font-bold hover:text-titan transition no-underline">
+                <!-- LOGO -->
+                <img src="logo.png" alt="Titan PDF Logo" class="h-10 w-auto">
+                <span class="hidden sm:inline"><i class="fa-solid fa-arrow-left ml-2 mr-1"></i> Voltar ao Início</span>
+            </a>
+            <span class="text-titan font-bold text-lg">Central de Atualizações</span>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-4 py-12">
+        
+        <!-- LATEST VERSION CARD -->
+        <div class="bg-white rounded-2xl shadow-lg border border-titan/20 p-8 mb-12 text-center md:text-left md:flex items-center justify-between">
+            <div>
+                <div class="inline-block bg-green-100 text-green-800 text-xs font-bold px-3 py-1 rounded-full mb-2">VERSÃO MAIS RECENTE</div>
+                <h1 class="text-4xl font-extrabold text-gray-900 mb-2">Titan PDF v7.0.0</h1>
+                <p class="text-gray-500">Lançado em 23 de Novembro de 2025</p>
+            </div>
+            <div class="mt-6 md:mt-0">
+                <a href="#" class="bg-titan hover:bg-titan-dark text-white px-8 py-4 rounded-lg font-bold text-lg shadow-lg hover:shadow-titan/40 transition flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-windows"></i> Baixar para Windows
+                </a>
+                <p class="text-xs text-gray-400 mt-2 text-center">Tamanho: 15MB • Win 10/11</p>
+            </div>
+        </div>
+
+        <!-- CHANGELOG -->
+        <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+            <i class="fa-solid fa-clock-rotate-left text-titan"></i> Histórico de Versões
+        </h2>
+
+        <div class="space-y-6 relative border-l-2 border-gray-200 ml-3 pl-8 pb-8">
+            
+            <!-- v7.0 -->
+            <div class="relative">
+                <div class="absolute -left-11 top-1 bg-titan w-6 h-6 rounded-full border-4 border-white shadow-sm"></div>
+                <h3 class="text-lg font-bold text-gray-900">Versão 7.0.0 <span class="text-sm font-normal text-gray-500 ml-2">- Atual</span></h3>
+                <ul class="mt-2 space-y-1 text-gray-600 list-disc list-inside">
+                    <li>Novo sistema de atualização automática.</li>
+                    <li>Aba de "Erros" para retry de downloads falhos.</li>
+                    <li>Correção no alinhamento dos checkboxes.</li>
+                    <li>Novos ícones visuais.</li>
+                </ul>
+            </div>
+
+            <!-- v6.5 -->
+            <div class="relative">
+                <div class="absolute -left-11 top-1 bg-gray-300 w-6 h-6 rounded-full border-4 border-white"></div>
+                <h3 class="text-lg font-bold text-gray-900">Versão 6.5.0</h3>
+                <ul class="mt-2 space-y-1 text-gray-600 list-disc list-inside">
+                    <li>Adicionado Modo Escuro (Dark Mode).</li>
+                    <li>Correção no download de Resumos e Mapas Mentais.</li>
+                    <li>Melhoria na performance de login via cookies.</li>
+                </ul>
+            </div>
+
+            <!-- v5.0 -->
+            <div class="relative">
+                <div class="absolute -left-11 top-1 bg-gray-300 w-6 h-6 rounded-full border-4 border-white"></div>
+                <h3 class="text-lg font-bold text-gray-900">Versão 5.0.0</h3>
+                <ul class="mt-2 space-y-1 text-gray-600 list-disc list-inside">
+                    <li>Lançamento da nova interface moderna.</li>
+                    <li>Sistema de licença online implementado.</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- WHATSAPP BUTTON -->
+    <a href="https://wa.me/5511999999999" target="_blank" class="fixed bottom-6 right-6 bg-[#25D366] hover:bg-[#128C7E] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition z-50 border-2 border-white" title="Fale conosco no WhatsApp">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+</body>
+</html>
