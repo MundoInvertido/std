@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte - Titan PDF Downloader</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        titan: { light: '#A855F7', DEFAULT: '#7E22CE', dark: '#581C87' },
+                        success: '#059669',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d1b4e 100%);
+        }
+
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="font-sans text-gray-800 antialiased bg-gray-50 smooth-scroll flex flex-col min-h-screen">
+
+    <!-- NAVBAR -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <a href="index.html" class="flex items-center gap-2 no-underline">
+                    <!-- LOGO IMAGEM -->
+                    <img src="logo.png" alt="Titan PDF Logo" class="h-10 w-auto">
+                    <span class="font-bold text-xl tracking-tight text-gray-900">TITAN <span
+                            class="text-titan">DOWNLOAD</span></span>
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html#funcionalidades"
+                        class="text-gray-600 hover:text-titan font-medium transition">Funcionalidades</a>
+                    <a href="index.html#precos" class="text-gray-600 hover:text-titan font-medium transition">Preços</a>
+                    <a href="tutoriais.html" class="text-gray-600 hover:text-titan font-medium transition"><i
+                            class="fa-solid fa-book-open mr-1"></i> Tutoriais</a>
+                    <a href="atualizacoes.html" class="text-gray-600 hover:text-titan font-medium transition"><i
+                            class="fa-solid fa-rotate mr-1"></i> Atualizações</a>
+                </div>
+                <a href="index.html#precos"
+                    class="bg-titan hover:bg-titan-dark text-white px-5 py-2 rounded-full font-bold transition shadow-lg hover:shadow-titan/30">
+                    Comprar
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENT -->
+    <main class="flex-grow pt-32 pb-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl font-extrabold text-gray-900 mb-8 text-center">Como podemos ajudar?</h1>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Contact Info -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <h3 class="text-xl font-bold text-gray-900 mb-6">Canais de Atendimento</h3>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-titan/10 p-3 rounded-lg text-titan">
+                                <i class="fa-brands fa-whatsapp text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">WhatsApp</h4>
+                                <p class="text-sm text-gray-600 mb-2">Resposta rápida em horário comercial.</p>
+                                <a href="https://wa.me/5583993884292" target="_blank"
+                                    class="text-titan font-bold hover:underline">Iniciar conversa &rarr;</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="bg-titan/10 p-3 rounded-lg text-titan">
+                                <i class="fa-solid fa-envelope text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">E-mail</h4>
+                                <p class="text-sm text-gray-600 mb-2">Para questões mais complexas.</p>
+                                <a href="mailto:titanpdfdownloader@gmail.com"
+                                    class="text-titan font-bold hover:underline">titanpdfdownloader@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ / Form Placeholder -->
+
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-400 py-12 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <span class="font-bold text-xl text-white tracking-tight mb-4 block">TITAN</span>
+                    <p class="text-sm">Ferramenta de automação para fins educacionais. Otimize seu tempo e estude
+                        melhor.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Links Úteis</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="termos-de-uso.html" class="hover:text-white transition">Termos de Uso</a></li>
+                        <li><a href="politica-de-privacidade.html" class="hover:text-white transition">Política de
+                                Privacidade</a></li>
+                        <li><a href="suporte.html" class="text-white font-bold transition">Suporte</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Contato</h4>
+                    <p class="text-sm mb-2"><i class="fa-solid fa-envelope mr-2"></i> titanpdfdownloader@gmail.com</p>
+                    <p class="text-sm"><i class="fa-brands fa-whatsapp mr-2"></i> 83 993884292</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-xs">
+                <p>&copy; 2025 Titan PDF Downloader. Todos os direitos reservados.</p>
+                <p class="mt-2 opacity-50">Este software não possui vínculo oficial com o Estratégia Concursos.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP BUTTON -->
+    <a href="https://wa.me/5583993884292" target="_blank"
+        class="fixed bottom-6 right-6 bg-[#25D366] hover:bg-[#128C7E] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition z-50 border-2 border-white"
+        title="Fale conosco no WhatsApp">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+
+</body>
+
+</html>
