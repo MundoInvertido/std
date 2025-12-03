@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atualizações - Titan PDF Downloader</title>
+    <title>Tutoriais - Titan PDF Downloader</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
@@ -15,101 +14,222 @@
                     fontFamily: { sans: ['Inter', 'sans-serif'] },
                     colors: {
                         titan: { light: '#A855F7', DEFAULT: '#7E22CE', dark: '#581C87' },
+                        success: '#059669',
+                        warning: '#F59E0B',
+                        danger: '#EF4444',
                     }
                 }
             }
         }
     </script>
-    <link rel="icon" href="logo3.ico" type="image/x-icon">
 </head>
-
 <body class="font-sans text-gray-800 bg-gray-50">
 
-    <!-- NAVBAR SIMPLIFICADA -->
-    <nav class="bg-white border-b border-gray-200 shadow-sm">
+    <nav class="bg-white border-b border-gray-200 shadow-sm fixed w-full z-50">
         <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
-            <a href="index.html"
-                class="flex items-center gap-2 text-gray-900 font-bold hover:text-titan transition no-underline">
+            <a href="index.html" class="flex items-center gap-2 text-gray-900 font-bold hover:text-titan transition no-underline">
                 <!-- LOGO -->
                 <img src="logo.png" alt="Titan PDF Logo" class="h-10 w-auto">
-                <span class="hidden sm:inline"><i class="fa-solid fa-arrow-left ml-2 mr-1"></i> Voltar ao Início</span>
+                <span class="hidden sm:inline"><i class="fa-solid fa-house ml-2 mr-1"></i> Início</span>
             </a>
-            <span class="text-titan font-bold text-lg">Central de Atualizações</span>
+            <span class="text-titan font-bold text-lg">Central de Ajuda</span>
         </div>
     </nav>
 
-    <main class="max-w-4xl mx-auto px-4 py-12">
+    <main class="max-w-5xl mx-auto px-4 py-24">
+        
+        <h1 class="text-4xl font-extrabold text-gray-900 mb-4 text-center">Como usar o Titan?</h1>
+        <p class="text-gray-500 text-center mb-12 text-lg">Guia passo a passo e solução de problemas.</p>
 
-        <!-- LATEST VERSION CARD -->
-        <div
-            class="bg-white rounded-2xl shadow-lg border border-titan/20 p-8 mb-12 text-center md:text-left md:flex items-center justify-between">
-            <div>
-                <div class="inline-block bg-green-100 text-green-800 text-xs font-bold px-3 py-1 rounded-full mb-2">
-                    VERSÃO MAIS RECENTE</div>
-                <h1 class="text-4xl font-extrabold text-gray-900 mb-2">Titan PDF v7.0.0</h1>
-                <p class="text-gray-500">Lançado em 23 de Novembro de 2025</p>
-            </div>
-            <div class="mt-6 md:mt-0">
-                <a href="#"
-                    class="bg-titan hover:bg-titan-dark text-white px-8 py-4 rounded-lg font-bold text-lg shadow-lg hover:shadow-titan/40 transition flex items-center justify-center gap-2">
-                    <i class="fa-brands fa-windows"></i> Baixar para Windows
-                </a>
-                <p class="text-xs text-gray-400 mt-2 text-center">Tamanho: 15MB • Win 10/11</p>
-            </div>
-        </div>
+        <div class="grid md:grid-cols-2 gap-8">
 
-        <!-- CHANGELOG -->
-        <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
-            <i class="fa-solid fa-clock-rotate-left text-titan"></i> Histórico de Versões
-        </h2>
-
-        <div class="space-y-6 relative border-l-2 border-gray-200 ml-3 pl-8 pb-8">
-
-            <!-- v7.0 -->
-            <div class="relative">
-                <div class="absolute -left-11 top-1 bg-titan w-6 h-6 rounded-full border-4 border-white shadow-sm">
+            <!-- VIDEO CARD -->
+            <div class="col-span-2 bg-black rounded-2xl overflow-hidden shadow-xl aspect-video relative group cursor-pointer">
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="w-20 h-20 bg-titan rounded-full flex items-center justify-center text-white text-3xl shadow-lg group-hover:scale-110 transition">
+                        <i class="fa-solid fa-play ml-1"></i>
+                    </div>
                 </div>
-                <h3 class="text-lg font-bold text-gray-900">Versão 7.0.0 <span
-                        class="text-sm font-normal text-gray-500 ml-2">- Atual</span></h3>
-                <ul class="mt-2 space-y-1 text-gray-600 list-disc list-inside">
-                    <li>Novo sistema de atualização automática.</li>
-                    <li>Aba de "Erros" para retry de downloads falhos.</li>
-                    <li>Correção no alinhamento dos checkboxes.</li>
-                    <li>Novos ícones visuais.</li>
-                </ul>
+                <!-- Placeholder image -->
+                <div class="w-full h-full bg-gray-800 flex items-center justify-center text-gray-500">
+                    <span class="text-lg">Vídeo Tutorial (Em breve)</span>
+                </div>
             </div>
 
-            <!-- v6.5 -->
-            <div class="relative">
-                <div class="absolute -left-11 top-1 bg-gray-300 w-6 h-6 rounded-full border-4 border-white"></div>
-                <h3 class="text-lg font-bold text-gray-900">Versão 6.5.0</h3>
-                <ul class="mt-2 space-y-1 text-gray-600 list-disc list-inside">
-                    <li>Adicionado Modo Escuro (Dark Mode).</li>
-                    <li>Correção no download de Resumos e Mapas Mentais.</li>
-                    <li>Melhoria na performance de login via cookies.</li>
-                </ul>
+            <!-- GUIA DE COOKIES -->
+            <div class="col-span-2 bg-white p-8 rounded-2xl shadow-sm border border-gray-200">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-12 h-12 bg-titan-light/20 text-titan rounded-xl flex items-center justify-center font-bold text-2xl">
+                        <i class="fa-solid fa-cookie-bite"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-gray-900">Como Configurar o Acesso (Cookies)</h2>
+                </div>
+                
+                <div class="space-y-4">
+                    <div class="flex gap-4 p-4 bg-gray-50 rounded-xl border border-gray-100">
+                        <div class="font-bold text-titan text-xl">1</div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Faça Login Manualmente</h4>
+                            <p class="text-sm text-gray-600 mt-1">Acesse o site oficial e entre na sua conta: <a href="https://perfil.estrategia.com/login" target="_blank" class="text-blue-600 hover:underline font-medium">https://perfil.estrategia.com/login</a></p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 p-4 bg-gray-50 rounded-xl border border-gray-100">
+                        <div class="font-bold text-titan text-xl">2</div>
+                        <div class="w-full">
+                            <h4 class="font-bold text-gray-800">Instale a Extensão Cookie-Editor</h4>
+                            <p class="text-sm text-gray-600 mt-1 mb-3">Escolha a versão para seu navegador:</p>
+                            
+                            <div class="flex flex-wrap gap-3">
+                                <a href="https://chromewebstore.google.com/detail/cookie-editor/hlkenndednhfkekhgcdicdfddnkalmdm" target="_blank" class="flex items-center gap-2 px-4 py-2 bg-white border border-gray-200 rounded-lg text-sm font-medium text-gray-700 hover:border-titan hover:text-titan transition shadow-sm">
+                                    <i class="fa-brands fa-chrome text-blue-500"></i> Google Chrome
+                                </a>
+                                <a href="https://microsoftedge.microsoft.com/addons/detail/cookieeditor/neaplmfkghagebokkhpjpoebhdledlfi" target="_blank" class="flex items-center gap-2 px-4 py-2 bg-white border border-gray-200 rounded-lg text-sm font-medium text-gray-700 hover:border-titan hover:text-titan transition shadow-sm">
+                                    <i class="fa-brands fa-edge text-blue-700"></i> Microsoft Edge
+                                </a>
+                                <a href="https://addons.mozilla.org/en-US/firefox/addon/cookie-editor/" target="_blank" class="flex items-center gap-2 px-4 py-2 bg-white border border-gray-200 rounded-lg text-sm font-medium text-gray-700 hover:border-titan hover:text-titan transition shadow-sm">
+                                    <i class="fa-brands fa-firefox text-orange-500"></i> Firefox
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 p-4 bg-gray-50 rounded-xl border border-gray-100">
+                        <div class="font-bold text-titan text-xl">3</div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Exporte e Copie</h4>
+                            <p class="text-sm text-gray-600 mt-1">Abra a extensão no site do Estratégia, clique em <strong>"Export"</strong> (ícone de porta/seta) e selecione <strong>"Export as JSON"</strong>. Cole o código no Titan.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <!-- v5.0 -->
-            <div class="relative">
-                <div class="absolute -left-11 top-1 bg-gray-300 w-6 h-6 rounded-full border-4 border-white"></div>
-                <h3 class="text-lg font-bold text-gray-900">Versão 5.0.0</h3>
-                <ul class="mt-2 space-y-1 text-gray-600 list-disc list-inside">
-                    <li>Lançamento da nova interface moderna.</li>
-                    <li>Sistema de licença online implementado.</li>
-                </ul>
+            <!-- SEÇÃO DE ERROS COMUNS -->
+            <div class="col-span-2 mt-8">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+                    <i class="fa-solid fa-triangle-exclamation text-warning"></i> Guia de Resolução de Erros
+                </h2>
+
+                <div class="grid gap-6">
+                    
+                    <!-- ERRO 0 -->
+                    <div class="bg-white rounded-xl shadow-sm border-l-4 border-blue-500 p-6">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-lg font-bold text-blue-900 mb-2">Erro 0: Pastas Vazias</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">Comum</span>
+                        </div>
+                        <p class="text-gray-700 text-sm mb-3">
+                            Isso ocorre quando o conteúdo ainda não foi disponibilizado no site para aquela aula específica.
+                        </p>
+                        <div class="bg-blue-50 p-3 rounded-lg">
+                            <p class="text-sm text-blue-800 font-medium">
+                                <i class="fa-solid fa-lightbulb mr-2"></i>Solução: Basta rodar o programa novamente quando o conteúdo for liberado. O Titan ignora o que já foi baixado e pega apenas as novidades.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- ERRO 1 -->
+                    <div class="bg-white rounded-xl shadow-sm border-l-4 border-warning p-6">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-lg font-bold text-yellow-900 mb-2">Erro 1: Falha de Autenticação / Fechando Sozinho</h3>
+                            <span class="bg-yellow-100 text-yellow-800 text-xs font-bold px-2 py-1 rounded">Login</span>
+                        </div>
+                        <p class="text-gray-700 text-sm mb-3">
+                            Significa que o acesso caiu, o cookie expirou ou o cache do navegador está com problemas.
+                        </p>
+                        <div class="bg-yellow-50 p-3 rounded-lg space-y-2">
+                            <p class="text-sm text-yellow-800">
+                                <i class="fa-solid fa-wrench mr-2"></i><strong>Passo 1:</strong> Entre manualmente no site do Estratégia e refaça o login (se já estiver logado, saia e entre novamente).
+                            </p>
+                            <p class="text-sm text-yellow-800">
+                                <i class="fa-solid fa-link mr-2"></i><strong>Passo 2:</strong> Se não conseguir entrar, tente o link direto: <a href="https://perfil.estrategia.com" class="underline">https://perfil.estrategia.com</a>. Depois gere novos cookies.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- ERRO 2 -->
+                    <div class="bg-white rounded-xl shadow-sm border-l-4 border-danger p-6">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-lg font-bold text-red-900 mb-2">Erro 2: Falha durante o Download</h3>
+                            <span class="bg-red-100 text-red-800 text-xs font-bold px-2 py-1 rounded">Conexão</span>
+                        </div>
+                        <p class="text-gray-700 text-sm mb-3">
+                            Houve perda de conexão com a internet ou perda de pacotes durante a transferência.
+                        </p>
+                        <div class="bg-red-50 p-3 rounded-lg">
+                            <p class="text-sm text-red-800 font-medium">
+                                <i class="fa-solid fa-rotate-right mr-2"></i>Solução: Reinicie o processo de download no programa. Não se preocupe, ele irá pular automaticamente os arquivos que já foram baixados com sucesso.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- FAQ -->
+            <div class="col-span-2 mt-8">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+                    <i class="fa-solid fa-circle-question text-titan"></i> Perguntas Frequentes
+                </h3>
+                
+                <div class="space-y-4">
+                    <details class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 cursor-pointer group">
+                        <summary class="font-bold text-gray-800 list-none flex justify-between items-center">
+                            O Titan Download é seguro?
+                            <span class="text-titan group-open:rotate-180 transition"><i class="fa-solid fa-chevron-down"></i></span>
+                        </summary>
+                        <p class="mt-4 text-gray-600 text-sm leading-relaxed">
+                            Sim, 100% seguro. O Titan age como um navegador comum, simulando a navegação de um usuário real ("headless browser"). Ele não armazena sua senha (apenas utiliza o cookie de sessão temporário que você fornece) e não compartilha seus dados com terceiros.
+                        </p>
+                    </details>
+
+                    <details class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 cursor-pointer group">
+                        <summary class="font-bold text-gray-800 list-none flex justify-between items-center">
+                            Posso usar minha licença em quantos computadores?
+                            <span class="text-titan group-open:rotate-180 transition"><i class="fa-solid fa-chevron-down"></i></span>
+                        </summary>
+                        <p class="mt-4 text-gray-600 text-sm leading-relaxed">
+                            A licença padrão é individual e vinculada ao Hardware ID do seu computador. Isso significa que ela funcionará apenas em <strong>1 dispositivo</strong> por vez. Caso precise formatar o PC ou trocar de máquina, entre em contato com nosso suporte para resetar sua licença.
+                        </p>
+                    </details>
+
+                    <details class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 cursor-pointer group">
+                        <summary class="font-bold text-gray-800 list-none flex justify-between items-center">
+                            O programa parou de baixar no meio. O que fazer?
+                            <span class="text-titan group-open:rotate-180 transition"><i class="fa-solid fa-chevron-down"></i></span>
+                        </summary>
+                        <p class="mt-4 text-gray-600 text-sm leading-relaxed">
+                            Geralmente isso ocorre por dois motivos: oscilação na internet ou expiração da sessão (cookie). 
+                            <br><br>
+                            1. Verifique sua conexão.<br>
+                            2. Gere novos cookies no navegador e cole novamente no Titan.<br>
+                            3. Reinicie o download. O programa é inteligente e pulará os arquivos que já foram baixados.
+                        </p>
+                    </details>
+
+                    <details class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 cursor-pointer group">
+                        <summary class="font-bold text-gray-800 list-none flex justify-between items-center">
+                            Como atualizo para a nova versão?
+                            <span class="text-titan group-open:rotate-180 transition"><i class="fa-solid fa-chevron-down"></i></span>
+                        </summary>
+                        <p class="mt-4 text-gray-600 text-sm leading-relaxed">
+                            O Titan possui um sistema de verificação automática. Sempre que você abrir o programa, ele checará se há novidades. Se houver uma atualização disponível, uma janela aparecerá convidando você a baixar a versão mais recente em nosso site.
+                        </p>
+                    </details>
+                </div>
             </div>
 
         </div>
-
     </main>
 
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center mt-12">
+        <p>&copy; 2025 Titan PDF Downloader.</p>
+    </footer>
+
     <!-- WHATSAPP BUTTON -->
-    <a href="https://wa.me/5583993884292" target="_blank"
-        class="fixed bottom-6 right-6 bg-[#25D366] hover:bg-[#128C7E] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition z-50 border-2 border-white"
-        title="Fale conosco no WhatsApp">
+    <a href="https://wa.me/5511999999999" target="_blank" class="fixed bottom-6 right-6 bg-[#25D366] hover:bg-[#128C7E] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition z-50 border-2 border-white" title="Fale conosco no WhatsApp">
         <i class="fa-brands fa-whatsapp text-3xl"></i>
     </a>
-</body>
 
+</body>
 </html>
